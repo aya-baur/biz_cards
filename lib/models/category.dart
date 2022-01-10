@@ -4,23 +4,13 @@ import 'card.dart';
 
 class Category{
   String name;
-  List<Card> cards;
+  List<Card> cards = <Card>[];
 
   //A constructor
-  Category(this.name){
-    cards = <Card>[];
-  }
+  Category(this.name);
 
   //methods
   void addToCategory(Card card){
     cards.add(card);
-  }
-
-  int length(){
-    if (cards != []) {
-      return cards.length;
-    }else{
-      return 0;
-    }
   }
 }
